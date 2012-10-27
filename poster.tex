@@ -6,7 +6,7 @@
 
 \begin{poster}{
   % key=value Options
-  columns=3,
+  columns=4,
   headerheight=0.12\textheight,
   background=plain,
   bgColorOne=white,
@@ -38,11 +38,11 @@
 }
 
   % Definition of boxes
-  \headerbox{Learning to program is hard}{name=problem,column=0}{
+  \headerbox{Programming is hard}{name=problem,column=0}{
     \vskip .1in
-    {\raggedright\large
+    {\raggedright\normalsize
     \begin{itemize}
-    \item Many students struggle in intro programming courses
+    \item {\bf Many students struggle} in intro programming courses
     \item Pass rates of 60\% (or worse!) are not unusual
     \item Students have difficulty learning syntax and basic concepts
     \end{itemize}
@@ -51,28 +51,28 @@
 
   \headerbox{Exercises can help}{name=exercises,column=0,below=problem}{
     \vskip .1in
-    {\raggedright\large
+    {\raggedright\normalsize
     \begin{itemize}
-    \item Introduce syntax and concepts in ``small bites''
-    \item Self-test exercises to accompany reading assignments
-    \item In-class assessment
-    \item Optional practice for students who need it
+    \item Introduce syntax and concepts in {\bf small bites}
+    \item {\bf Self-test exercises} to accompany reading assignments
+    \item In-class {\bf assessment}
+    \item Optional {\bf practice} for students who need it
     \end{itemize}
     }
   }
 
   \headerbox{Web-based systems}{name=systems,column=0,below=exercises}{
     \vskip .1in
-    {\raggedright\large
+    {\raggedright\normalsize
     \begin{itemize}
     \item Web-based systems are nice:
       \begin{itemize}
-      \item Students can access from anywhere using a web browser
-      \item No software installation (except on server)
+      \item Students can {\bf access from anywhere} using a web browser
+      \item {\bf No software installation} (except on server)
       \end{itemize}
     \item Lots of existing systems:
       \begin{itemize}
-      \item Free: CodingBat, PracticeIt!, CodeWrite, CodeAssessor, others
+      \item Free to use: CodingBat, PracticeIt!, CodeWrite, CodeAssessor, others
       \item Commercial: CodeLab, MyProgrammingLab
       \end{itemize}
     \item {\it Why create another?}
@@ -80,15 +80,24 @@
     }
   }
 
-  \headerbox{Exercises are the important part!}{name=exercisesimportant,column=1}{
+  \headerbox{Community!}{name=community,column=1}{
     \vskip .1in
-    {\raggedright\large
+    {\raggedright\normalsize
     \begin{itemize}
-    \item The main issue is the {\em exercises}
+    \item A system is useful only to the
+          extent that good exercises are available
+    \item Idea: {\bf crowdsourced exercises}
       \begin{itemize}
-      \item Who writes them?
-      \item Who is allowed to use them?
-      \item Are there lots of ready-made exercises available?
+      \item {\bf Users contribute exercises} under a permissive license
+            (e.g., Creative Commons)
+      \item Exercises made available through a {\bf central repository}
+      \end{itemize}
+    \item How to build a {\bf community} of users?
+          The system should
+      \begin{itemize}
+      \item Be {\bf open source}
+      \item Be (relatively) {\bf easy to host}
+      \item Make it easy to {\bf find relevant exercises}
       \end{itemize}
     \end{itemize}
     }
