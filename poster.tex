@@ -1,6 +1,14 @@
 \documentclass[landscape,paperwidth=40in,paperheight=34in]{baposter}
 
 \usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{url}
+
+% This prevents a \section being created for the bibliography
+\renewcommand{\section}[2]{}%
+
+\newcommand{\BI}{\begin{itemize}[itemsep=.05in,parsep=0in,leftmargin=.2in]}
+\newcommand{\EI}{\end{itemize}}
 
 \begin{document}
 
@@ -41,65 +49,93 @@
   \headerbox{Programming is hard}{name=problem,column=0}{
     \vskip .1in
     {\raggedright\normalsize
-    \begin{itemize}
+    \BI
     \item {\bf Many students struggle} in intro programming courses
-    \item Pass rates of 60\% (or worse!) are not unusual
+    \item Pass rates of 60\% (or worse!) are
+      not unusual\cite{Bennedsen:2007:FRI:1272848.1272879}
     \item Students have difficulty learning syntax and basic concepts
-    \end{itemize}
+    \EI
     }
   }
 
   \headerbox{Exercises can help}{name=exercises,column=0,below=problem}{
     \vskip .1in
     {\raggedright\normalsize
-    \begin{itemize}
+    \BI
     \item Introduce syntax and concepts in {\bf small bites}
     \item {\bf Self-test exercises} to accompany reading assignments
     \item In-class {\bf assessment}
     \item Optional {\bf practice} for students who need it
-    \end{itemize}
+    \EI
     }
   }
 
   \headerbox{Web-based systems}{name=systems,column=0,below=exercises}{
     \vskip .1in
     {\raggedright\normalsize
-    \begin{itemize}
-    \item Web-based systems are nice:
-      \begin{itemize}
-      \item Students can {\bf access from anywhere} using a web browser
-      \item {\bf No software installation} (except on server)
-      \end{itemize}
+    \BI
+    \item Students can {\bf access from anywhere} using a web browser,
+      {\bf no software installation} (except on server)
     \item Lots of existing systems:
-      \begin{itemize}
-      \item Free to use: CodingBat, PracticeIt!, CodeWrite, CodeAssessor, others
+      \BI
+      \item Free: CodingBat, PracticeIt!, CodeWrite, CodeAssessor, others
       \item Commercial: CodeLab, MyProgrammingLab
-      \end{itemize}
+      \EI
     \item {\it Why create another?}
-    \end{itemize}
+    \EI
     }
   }
 
-  \headerbox{Community!}{name=community,column=1}{
+  \headerbox{Community!}{name=community,column=0,below=systems}{
     \vskip .1in
     {\raggedright\normalsize
-    \begin{itemize}
-    \item A system is useful only to the
-          extent that good exercises are available
+    \BI
     \item Idea: {\bf crowdsourced exercises}
-      \begin{itemize}
+      \BI
+      \item {\bf Open source software} that can be hosted anywhere
       \item {\bf Users contribute exercises} under a permissive license
             (e.g., Creative Commons)
       \item Exercises made available through a {\bf central repository}
-      \end{itemize}
-    \item How to build a {\bf community} of users?
-          The system should
-      \begin{itemize}
-      \item Be {\bf open source}
-      \item Be (relatively) {\bf easy to host}
-      \item Make it easy to {\bf find relevant exercises}
-      \end{itemize}
-    \end{itemize}
+      \EI
+    \EI
+    }
+  }
+
+  \headerbox{CloudCoder}{name=cloudcoder,column=1}{
+    \vskip .1in
+    {\raggedright\normalsize
+    \BI
+      \item Website: \url{http://cloudcoder.org}
+      \item {\bf Open source} (AGPL v3)
+      \item Supports {\bf C}, {\bf Java}, and {\bf Python} exercises
+      \item (Relatively) {\bf easy to host}
+        \BI
+        \item It's a Java web application
+        \item Single-jar deployment
+        \EI
+      \item Requires two {\bf Linux servers}:
+        \BI
+        \item One for {\bf webapp}, needs a MySQL database
+        \item One (or more) to {\bf build/test} student submissions
+        \EI
+      \item {\bf Exercise repository}:
+            \url{https://cloudcoder.org/repo}
+        \BI
+        \item Simple import/export of exercises
+        \item Browsing/searching to find exercises
+        \EI
+    \EI
+    }
+  }
+
+  \headerbox{Something}{name=something,column=2}{
+    Something
+  }
+
+  \headerbox{References}{name=references,column=3}{
+    {\small
+    \bibliographystyle{plain}
+    \bibliography{poster}
     }
   }
 
