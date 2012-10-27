@@ -1,0 +1,41 @@
+\documentclass[landscape,paperwidth=40in,paperheight=34in]{baposter}
+
+\usepackage{graphicx}
+
+\begin{document}
+
+\begin{poster}{
+  % key=value Options
+  columns=3,
+  background=plain,
+  bgColorOne=white,
+  borderColor=black,
+  headerColorOne=blue!20!white,
+  headerColorTwo=blue!20!white
+}{
+  % Eye catcher
+
+}{
+  % Poster title
+  \vskip .1in
+  CloudCoder --- A Web-Based Programming Exercise System
+}{
+  % Poster authors
+  \vskip .1in
+  {\LARGE
+  David Hovemeyer <{\tt dhovemey@ycp.edu}>, York College of Pennsylvania \\
+  \vskip .05in
+  Jaime Spacco <{\tt jspacco@knox.edu}>, Knox College}
+}{
+  % University logo(s)
+
+}
+
+  % Definition of boxes
+  \headerbox{Hello, world}{name=Hello,column=0,row=0,span=1}{
+    Some stuff
+  }
+
+\end{poster}
+
+\end{document}
