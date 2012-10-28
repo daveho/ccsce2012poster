@@ -10,6 +10,9 @@
 \newcommand{\BI}{\begin{itemize}[itemsep=.05in,parsep=0in,leftmargin=.2in]}
 \newcommand{\EI}{\end{itemize}}
 
+\newcommand{\BE}{\begin{enumerate}[itemsep=.05in,parsep=0in,leftmargin=.2in]}
+\newcommand{\EE}{\end{enumerate}}
+
 \begin{document}
 
 \begin{poster}{
@@ -83,11 +86,24 @@
       \item Commercial: CodeLab, MyProgrammingLab, others
       \EI
     \item {\it Why create another?}
+    \item Observation: a common model for pedagogical tools is
+      \BE
+      \item Implement it
+      \item Publish paper(s) about it
+      \item {\it Maybe} release software and get a few other
+            institutions to use it
+      \item Then it fades into disuse
+      \EE
+    \item Observation: adopting courseware has a significant cost
+      \BI
+      \item Need to convince instructors that a tool
+            will be worth the effort
+      \EI
     \EI
     }
   }
 
-  \headerbox{Community!}{name=community,column=0,below=systems}{
+  \headerbox{Community!}{name=community,column=1}{
     \vskip .1in
     {\raggedright\normalsize
     \BI
@@ -102,7 +118,7 @@
     }
   }
 
-  \headerbox{CloudCoder}{name=cloudcoder,column=1}{
+  \headerbox{CloudCoder}{name=cloudcoder,column=1,below=community}{
     \vskip .1in
     {\raggedright\normalsize
     \BI
@@ -142,26 +158,35 @@
     }
   }
 
-  \headerbox{We need your help!}{name=needhelp,column=1,below=experiences}{
-    \vskip .1in
-    {\raggedright\normalsize
-    \BI
-    \item Try it out!
-    \item Use our exercises!
-    \item Share your exercises!
-    \EI
-    }
-  }
-
   \headerbox{Screenshot}{name=screenshot,column=2,span=2}{
     \begin{center}
     \includegraphics[width=5.25in]{images/ccScreenshot}
     \end{center}
   }
 
-  \headerbox{Something}{name=something,column=2,below=screenshot}{
+  \headerbox{We need your help!}{name=needhelp,column=2,below=screenshot}{
     \vskip .1in
-    Something
+    {\raggedright\normalsize
+    \BI
+    \item {\bf Try it out}!
+    \item {\bf Use our exercises}!
+    \item {\bf Share your exercises}!
+    \EI
+    }
+  }
+
+  \headerbox{Results?}{name=results,column=2,below=needhelp}{
+    \vskip .1in
+    {\raggedright\normalsize
+    Can CloudCoder improve learning?\\
+    {\bf We don't know}!
+      \BI
+      \item Spring 2013: {\bf full study} using CloudCoder exercises
+            for self-test, in-class assessment, and remediation/practice
+      \item At York College and other institutions
+      \item {\bf Join us}!  We are actively seeking collaborators
+      \EI
+    }
   }
 
   \headerbox{References}{name=references,column=3,below=screenshot}{
