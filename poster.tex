@@ -54,6 +54,7 @@
     \item Pass rates of 60\% (or worse!) are
       not unusual\cite{Bennedsen:2007:FRI:1272848.1272879}
     \item Students have difficulty learning syntax and basic concepts
+    \item Exercises can help\cite{Kumar:2005:REE:1047124.1047422}
     \EI
     }
   }
@@ -79,7 +80,7 @@
     \item Lots of existing systems:
       \BI
       \item Free: CodingBat, PracticeIt!, CodeWrite, CodeAssessor, others
-      \item Commercial: CodeLab, MyProgrammingLab
+      \item Commercial: CodeLab, MyProgrammingLab, others
       \EI
     \item {\it Why create another?}
     \EI
@@ -111,7 +112,7 @@
       \item (Relatively) {\bf easy to host}
         \BI
         \item It's a Java web application
-        \item Single-jar deployment
+        \item Single-jar deployment using Jetty
         \EI
       \item Requires two {\bf Linux servers}:
         \BI
@@ -121,8 +122,8 @@
       \item {\bf Exercise repository}:
             \url{https://cloudcoder.org/repo}
         \BI
-        \item Simple import/export of exercises
-        \item Browsing/searching to find exercises
+        \item {\bf Simple import/export} of exercises
+        \item {\bf Browsing/searching} to find exercises
         \EI
     \EI
     }
@@ -152,12 +153,18 @@
     }
   }
 
-  \headerbox{Something}{name=something,column=2}{
+  \headerbox{Screenshot}{name=screenshot,column=2,span=2}{
+    \begin{center}
+    \includegraphics[width=5.25in]{images/ccScreenshot}
+    \end{center}
+  }
+
+  \headerbox{Something}{name=something,column=2,below=screenshot}{
     \vskip .1in
     Something
   }
 
-  \headerbox{References}{name=references,column=3}{
+  \headerbox{References}{name=references,column=3,below=screenshot}{
     \vskip .1in
     {\small
     \bibliographystyle{plain}
